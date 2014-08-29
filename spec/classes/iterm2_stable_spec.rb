@@ -5,7 +5,8 @@ describe 'iterm2::stable' do
     version = '2_0'
     should contain_package('iTerm').with({
       :source   => "http://www.iterm2.com/downloads/stable/iTerm2_v#{version}.zip",
-      :provider => 'compressed_app'
+      :provider => 'compressed_app',
+      :flavor   => 'zip'
     })
   end
 end

@@ -13,6 +13,7 @@
 class iterm2::stable($version='2_0') {
   package { 'iTerm':
     source   => "http://www.iterm2.com/downloads/stable/iTerm2_v${version}.zip",
+    flavor   => 'zip',
     provider => 'compressed_app'
   }
 }

@@ -12,6 +12,7 @@
 class iterm2::dev($version = '20140421') {
   package { 'iTerm':
     source   => "http://www.iterm2.com/downloads/beta/iTerm2-1_0_0_${version}.zip",
+    flavor   => 'zip',
     provider => 'compressed_app'
   }
 }
